@@ -30,7 +30,7 @@ namespace Keeper_Louis.K3.Bussiness.PlugIn
                     {
                         long fentryid = Convert.ToInt64(dot["Id"]);
                         long materialId = Convert.ToInt64(dot["MaterialId_Id"]);
-                        string strSql = string.Format(@"/*dialect*/select sum(c.FAMOUNT)/sum(b.FREALQTY) from t_STK_InStock a inner join t_stk_instockentry b on a.FID = b.FID inner join T_STK_INSTOCKENTRY_F c on a.FID = c.FID where a.FSTOCKORGID = {0} and b.FMATERIALID = {1} and a.FDATE >= DATEADD(MM,DATEDIFF(MM,0,GETDATE()),0) and a.FDATE <{2}", orgId,materialId, dt.ToShortDateString());
+                        string strSql = string.Format(@"/*dialect*/select sum(c.FAMOUNT)/sum(b.FREALQTY) from t_STK_InStock a inner join t_stk_instockentry b on a.FID = b.FID inner join T_STK_INSTOCKENTRY_F c on a.FID = c.FID where a.FSTOCKORGID = {0} and b.FMATERIALID = {1} and a.FDATE >= DATEADD(MM,DATEDIFF(MM,0,GETDATE()),0) and a.FDATE <'{2}'", orgId,materialId, dt.ToShortDateString());
                         double result = DBUtils.ExecuteScalar<Double>(this.Context,strSql,0.0,null);
                         if (result!=0.0)
                         {

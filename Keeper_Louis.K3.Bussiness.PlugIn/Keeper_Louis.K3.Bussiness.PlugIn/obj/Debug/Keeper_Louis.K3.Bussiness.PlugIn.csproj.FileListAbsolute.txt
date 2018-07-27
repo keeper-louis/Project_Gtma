@@ -2,5 +2,6 @@ D:\Projects\GitRepo\Project_Gtma\Keeper_Louis.K3.Bussiness.PlugIn\Keeper_Louis.K
 D:\Projects\GitRepo\Project_Gtma\Keeper_Louis.K3.Bussiness.PlugIn\Keeper_Louis.K3.Bussiness.PlugIn\obj\Debug\Keeper_Louis.K3.Bussiness.PlugIn.pdb
 C:\Program Files (x86)\Kingdee\K3Cloud\WebSite\Bin\Keeper_Louis.K3.Bussiness.PlugIn.dll
 C:\Program Files (x86)\Kingdee\K3Cloud\WebSite\Bin\Keeper_Louis.K3.Bussiness.PlugIn.pdb
+D:\Projects\GitRepo\Project_Gtma\Project_Gtma\Keeper_Louis.K3.Bussiness.PlugIn\Keeper_Louis.K3.Bussiness.PlugIn\obj\Debug\Keeper_Louis.K3.Bussiness.PlugIn.csprojResolveAssemblyReference.cache
 D:\Projects\GitRepo\Project_Gtma\Project_Gtma\Keeper_Louis.K3.Bussiness.PlugIn\Keeper_Louis.K3.Bussiness.PlugIn\obj\Debug\Keeper_Louis.K3.Bussiness.PlugIn.dll
 D:\Projects\GitRepo\Project_Gtma\Project_Gtma\Keeper_Louis.K3.Bussiness.PlugIn\Keeper_Louis.K3.Bussiness.PlugIn\obj\Debug\Keeper_Louis.K3.Bussiness.PlugIn.pdb

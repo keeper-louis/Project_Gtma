@@ -46,7 +46,18 @@ namespace Keeper_Louis.K3.Bussiness.PlugIn
         public override void DataChanged(DataChangedEventArgs e)
         {
             base.DataChanged(e);
-            if (e.Field.Key.ToUpperInvariant().Equals("FCOUNTQTY"))
+            //FGAINQTY盘盈数量,盘亏数量FLOSSQTY
+            //if (e.Field.Key.ToUpperInvariant().Equals("FCOUNTQTY"))
+            //{
+            //    //盈亏金额 = 盘盈-盘亏*平均单价
+            //    this.Model.SetValue("F_LHR_AMOUNT", Convert.ToDecimal(Convert.ToDecimal(Convert.ToDecimal(this.Model.GetValue("FGAINQTY", e.Row)) - Convert.ToDecimal(this.Model.GetValue("FLOSSQTY", e.Row))) * Convert.ToDecimal(this.Model.GetValue("F_LHR_PRICE", e.Row))), e.Row);
+            //}
+            if (e.Field.Key.ToUpperInvariant().Equals("FGAINQTY"))
+            {
+                //盈亏金额 = 盘盈-盘亏*平均单价
+                this.Model.SetValue("F_LHR_AMOUNT", Convert.ToDecimal(Convert.ToDecimal(Convert.ToDecimal(this.Model.GetValue("FGAINQTY", e.Row)) - Convert.ToDecimal(this.Model.GetValue("FLOSSQTY", e.Row))) * Convert.ToDecimal(this.Model.GetValue("F_LHR_PRICE", e.Row))), e.Row);
+            }
+            if (e.Field.Key.ToUpperInvariant().Equals("FLOSSQTY"))
             {
                 //盈亏金额 = 盘盈-盘亏*平均单价
                 this.Model.SetValue("F_LHR_AMOUNT", Convert.ToDecimal(Convert.ToDecimal(Convert.ToDecimal(this.Model.GetValue("FGAINQTY", e.Row)) - Convert.ToDecimal(this.Model.GetValue("FLOSSQTY", e.Row))) * Convert.ToDecimal(this.Model.GetValue("F_LHR_PRICE", e.Row))), e.Row);
